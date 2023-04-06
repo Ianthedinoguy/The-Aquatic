@@ -1,0 +1,87 @@
+{
+	"id": "theaquatic",
+	"name": "The Aquatic",
+	"description": "An aquatic Slugcat, perfectly built for this watery world.",
+	"features": {
+		"color": "007577",
+		"custom_colors": [
+			{
+				"name": "Body",
+				"story": "007577",
+				"arena": [ "F0F0FF", "FFFF73", "FF7373", "1E112E" ]
+			},
+			{
+				"name": "Eyes",
+				"story": "A8A9AD",
+				"arena": [ "A8A9AD", "000001", "000001", "BBB6BC" ]
+			},
+			{
+				"name": "Tail",
+				"story": "fbeee5",
+				"arena": [ "A8A9AD", "000001", "000001", "BBB6BC" ]
+			}
+		],
+		"weight": 3.3,
+		"alignments": {
+			"Jetfish": {
+				"like": -1,
+				"strength": 0.1
+			},
+			"Eel": {
+				"like": 0.75,
+				"strength": 0.01
+			},
+			"BigEel": {
+				"like": 1,
+				"strength": 0.1
+			},
+			"Aquapede": {
+				"like": -1,
+				"strength": -0.1
+			}
+		},
+
+		"can_maul": true,
+		"maul_damage": 1.5,
+		"maul_blacklist": [ "TubeWorm", "SlugNPC" ],
+		"the_mark": true,
+		"auto_grab_batflies": false,
+		"tunnel_speed": [ 2.0, 0.75 ],
+		"climb_speed": [ 1.75, 0.5 ],
+		"walk_speed": [ 0.75, 0.25 ],
+		"throw_skill": [ 2, 0 ],
+		"lung_capacity": [ 30.0, 5.0 ],
+		"loudness": [1.5, 0.75],
+		"theaquatic/super_jump": 0.5,
+		"theaquatic/super_crawl": 3.0,
+		"theaquatic/fancytail": true,
+		"theaquatic/super_slide": true,
+		"theaquatic/aquatichead": true,
+		"theaquatic/is_the_aquatic": true,
+
+		"diet": {
+			"corpses": 1.0,
+			"meat": 0.75,
+			"plants": 0.25,
+			"overrides": {
+			 "SmallCentipede": 3.0,
+			 "DangleFruit": 1.0,
+			 "SlimeMold": 1.0,
+			 "SSOracleSwarmer": 1.0,
+			 "SLOracleSwarmer": 0,
+			 "Seed": 0.5,
+			 "SeedCob": 0.5
+			}
+		},
+		"select_menu_scene": "Slugcat_The Aquatic",
+		"select_menu_scene_ascended": "Ghost_The Aquatic",
+
+		"start_room": "SL_C15",
+		"food_min": 5,
+		"food_max": 9,
+		"guide_overseer": 5,
+		"cycle_length_min": 16,
+		"cycle_length_max": 32,
+		"world_state": "theaquatic"
+	}
+	}
